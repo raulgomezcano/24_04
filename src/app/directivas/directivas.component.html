@@ -1,0 +1,16 @@
+<h3>Lista de compañeros: </h3>
+Introduce el nombre de un compañero: <input type="text" [(ngModel)]="nombre">
+<br>
+<button (click)="agregarCompi()">Añadir a la lista</button>
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of Lista">
+            <td>{{item}}</td>
+        </tr>
+    </tbody>
+</table>

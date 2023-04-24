@@ -1,0 +1,3 @@
+Numero a enviar: <input type="number" [(ngModel)]="id">
+Nombre a enviar: <input type="text" [(ngModel)]="nombre">
+<button (click)="enviarParametros()" [routerLink]="['dos_destino']" [queryParams]="{accionid:'id',accionnombre:'nombre'}">Enviar</button>
